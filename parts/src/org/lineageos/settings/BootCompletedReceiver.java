@@ -25,6 +25,7 @@ import android.util.Log;
 import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
+
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
 
