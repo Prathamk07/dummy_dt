@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
-    libstdc++.vendor \
+  #  libstdc++.vendor \
     libpiex_shim
 
 # Consumer IR
@@ -254,8 +254,8 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor \
-    android.system.keystore2
+    android.hardware.keymaster@4.1.vendor
+#    android.system.keystore2
 
 # Light
 PRODUCT_PACKAGES += \
@@ -263,8 +263,8 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
-    vendor.qti.media.c2@1.0-service
+    android.hardware.media.omx@1.0-service 
+#   vendor.qti.media.c2@1.0-service
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
@@ -290,8 +290,8 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor
+#    libloc_net_iface \
+#    libloc_net_iface.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -304,8 +304,8 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libchrome.vendor \
     vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0.vendor \
+#    vendor.nxp.nxpnfclegacy@1.0 \
+#    vendor.nxp.nxpnfclegacy@1.0.vendor \
     Tag
 
 # OMX
@@ -317,11 +317,11 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxVidcCommon \
+#    libOmxVdec \
+#    libOmxVenc \
+#    libOmxVidcCommon \
     libstagefrighthw \
-    libstagefrighthw.vendor \
+ #   libstagefrighthw.vendor \
     libstagefright_omx \
     libstagefright_foundation \
     libstagefright_softomx.vendor
@@ -501,8 +501,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # Spatial Audio
-PRODUCT_PACKAGES += \
-    frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.dynamic.head_tracker.xml
+#PRODUCT_PACKAGES += \
+#    frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.dynamic.head_tracker.xml
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -564,7 +564,7 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+#    android.hardware.wifi@1.0-service \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     hostapd \
