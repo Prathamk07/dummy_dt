@@ -27,17 +27,15 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <uses-sdk
-        android:minSdkVersion="33"
-        android:targetSdkVersion="33"/>
+        android:minSdkVersion="24"
+        android:targetSdkVersion="24"/>
 
     <application
         android:label="@string/device_settings_app_name"
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver
-            android:name=".BootCompletedReceiver"
-            android:exported="true">
+        <receiver android:name=".BootCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -46,15 +44,13 @@
 
         <service
             android:name=".thermal.ThermalService"
-            android:permission="ThermalService"
-            android:exported="true">
+            android:permission="ThermalService">
         </service>
 
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:exported="true">
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
